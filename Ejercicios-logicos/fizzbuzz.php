@@ -17,6 +17,26 @@
         <li>Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".</li>
     </ul>
 </div>
+
+<?php
+    // Logica
+    for ($i = 1; $i <= 100; $i++) {
+        $divisibleXTres = $i % 3 == 0;
+        $divisibleXCinco = $i % 5 == 0;
+
+        if ($divisibleXTres && $divisibleXCinco) {
+            echo "fizzbuzz";
+        } elseif ($divisibleXTres) {
+            echo "fizz";
+        } elseif ($divisibleXCinco) {
+            echo "buzz";
+        } else {
+            echo $i;
+        }
+        echo "<br>";
+    }
+?>
+
     
 </body>
 </html>
